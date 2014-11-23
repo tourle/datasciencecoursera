@@ -7,92 +7,92 @@ The pre-processed data is described in the Codebook for the original data set li
 Codebook for run_analysis.R
 ----------------------------
 The only columns extracted from the original data set, and output by run_analysis.R script are:
-			tBodyAcc-mean()-X
-			tBodyAcc-mean()-Y
-			tBodyAcc-mean()-Z
-			tGravityAcc-mean()-X
-			tGravityAcc-mean()-Y
-			tGravityAcc-mean()-Z
-			tBodyAccJerk-mean()-X
-			tBodyAccJerk-mean()-Y
-			tBodyAccJerk-mean()-Z
-			tBodyGyro-mean()-X
-			tBodyGyro-mean()-Y
-			tBodyGyro-mean()-Z
-			tBodyGyroJerk-mean()-X
-			tBodyGyroJerk-mean()-Y
-			tBodyGyroJerk-mean()-Z
-			tBodyAccMag-mean()
-			tGravityAccMag-mean()
-			tBodyAccJerkMag-mean()
-			tBodyGyroMag-mean()
-			tBodyGyroJerkMag-mean()
-			fBodyAcc-mean()-X
-			fBodyAcc-mean()-Y
-			fBodyAcc-mean()-Z
-			fBodyAccJerk-mean()-X
-			fBodyAccJerk-mean()-Y
-			fBodyAccJerk-mean()-Z
-			fBodyGyro-mean()-X
-			fBodyGyro-mean()-Y
-			fBodyGyro-mean()-Z
-			fBodyAccMag-mean()
-			fBodyBodyAccJerkMag-mean()
-			fBodyBodyGyroMag-mean()
-			fBodyBodyGyroJerkMag-mean()
-			tBodyAcc-std()-X
-			tBodyAcc-std()-Y
-			tBodyAcc-std()-Z
-			tGravityAcc-std()-X
-			tGravityAcc-std()-Y
-			tGravityAcc-std()-Z
-			tBodyAccJerk-std()-X
-			tBodyAccJerk-std()-Y
-			tBodyAccJerk-std()-Z
-			tBodyGyro-std()-X
-			tBodyGyro-std()-Y
-			tBodyGyro-std()-Z
-			tBodyGyroJerk-std()-X
-			tBodyGyroJerk-std()-Y
-			tBodyGyroJerk-std()-Z
-			tBodyAccMag-std()
-			tGravityAccMag-std()
-			tBodyAccJerkMag-std()
-			tBodyGyroMag-std()
-			tBodyGyroJerkMag-std()
-			fBodyAcc-std()-X
-			fBodyAcc-std()-Y
-			fBodyAcc-std()-Z
-			fBodyAccJerk-std()-X
-			fBodyAccJerk-std()-Y
-			fBodyAccJerk-std()-Z
-			fBodyGyro-std()-X
-			fBodyGyro-std()-Y
-			fBodyGyro-std()-Z
-			fBodyAccMag-std()
-			fBodyBodyAccJerkMag-std()
-			fBodyBodyGyroMag-std()
-			fBodyBodyGyroJerkMag-std()
-	The output data from run_analysis.R produces a mean for each of the above variables.
+
+		tBodyAcc-mean()-X
+		tBodyAcc-mean()-Y
+		tBodyAcc-mean()-Z
+		tGravityAcc-mean()-X
+		tGravityAcc-mean()-Y
+		tGravityAcc-mean()-Z
+		tBodyAccJerk-mean()-X
+		tBodyAccJerk-mean()-Y
+		tBodyAccJerk-mean()-Z
+		tBodyGyro-mean()-X
+		tBodyGyro-mean()-Y
+		tBodyGyro-mean()-Z
+		tBodyGyroJerk-mean()-X
+		tBodyGyroJerk-mean()-Y
+		tBodyGyroJerk-mean()-Z
+		tBodyAccMag-mean()
+		tGravityAccMag-mean()
+		tBodyAccJerkMag-mean()
+		tBodyGyroMag-mean()
+		tBodyGyroJerkMag-mean()
+		fBodyAcc-mean()-X
+		fBodyAcc-mean()-Y
+		fBodyAcc-mean()-Z
+		fBodyAccJerk-mean()-X
+		fBodyAccJerk-mean()-Y
+		fBodyAccJerk-mean()-Z
+		fBodyGyro-mean()-X
+		fBodyGyro-mean()-Y
+		fBodyGyro-mean()-Z
+		fBodyAccMag-mean()
+		fBodyBodyAccJerkMag-mean()
+		fBodyBodyGyroMag-mean()
+		fBodyBodyGyroJerkMag-mean()
+		tBodyAcc-std()-X
+		tBodyAcc-std()-Y
+		tBodyAcc-std()-Z
+		tGravityAcc-std()-X
+		tGravityAcc-std()-Y
+		tGravityAcc-std()-Z
+		tBodyAccJerk-std()-X
+		tBodyAccJerk-std()-Y
+		tBodyAccJerk-std()-Z
+		tBodyGyro-std()-X
+		tBodyGyro-std()-Y
+		tBodyGyro-std()-Z
+		tBodyGyroJerk-std()-X
+		tBodyGyroJerk-std()-Y
+		tBodyGyroJerk-std()-Z
+		tBodyAccMag-std()
+		tGravityAccMag-std()
+		tBodyAccJerkMag-std()
+		tBodyGyroMag-std()
+		tBodyGyroJerkMag-std()
+		fBodyAcc-std()-X
+		fBodyAcc-std()-Y
+		fBodyAcc-std()-Z
+		fBodyAccJerk-std()-X
+		fBodyAccJerk-std()-Y
+		fBodyAccJerk-std()-Z
+		fBodyGyro-std()-X
+		fBodyGyro-std()-Y
+		fBodyGyro-std()-Z
+		fBodyAccMag-std()
+		fBodyBodyAccJerkMag-std()
+		fBodyBodyGyroMag-std()
+		fBodyBodyGyroJerkMag-std()
+The output data from run_analysis.R produces a mean for each of the above variables.
 			
-	Two extra columns are added by run_analysis.R and these are output:
-			subject - the id of the person logging their activity using wearable technology at the time of the observation 
-			activity - the physical activity that the subject was doing at the time of the observation.
+Two extra columns are added by run_analysis.R and these are output:
+subject - the id of the person logging their activity using wearable technology at the time of the observation 
+activity - the physical activity that the subject was doing at the time of the observation.
 			
-			'activity' data was originally listed as a numerical identifier in the original data set but was changed to a factor and renamed to easy-to-read labels using the activity_labels original data set.
-			Observation data in the original data set had labels in the format V1, V2, V3... etc so was renamed to easy-to-read labels using the features original data set.
+'activity' data was originally listed as a numerical identifier in the original data set but was changed to a factor and renamed to easy-to-read labels using the activity_labels original data set.
+Observation data in the original data set had labels in the format V1, V2, V3... etc so was renamed to easy-to-read labels using the features original data set.
 
 Output is shown as a set of means by subject and by activity.
 All of the output data above is written by run_analysis.R to a file 'qtidyData.txt'
 
-----------------------------------------------------------------
-Codebook for the original data set:
+Codebook for the original data set
+----------------------------------
 
 Feature_Info.txt
-	Feature Selection 
-	=================
-
-	The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+----------------
+ Feature Selection
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 	Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
@@ -150,7 +150,7 @@ Feature_Info.txt
 	The complete list of variables of each feature vector is available in 'features.txt' below.
 	
 Features.txt
-=================
+------------
 	1 tBodyAcc-mean()-X
 	2 tBodyAcc-mean()-Y
 	3 tBodyAcc-mean()-Z
