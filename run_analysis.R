@@ -4,7 +4,7 @@
 #1.Merges the training and the test sets to create one data set using original data from:
   #http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip
   
-  #1.1 Read in the feature names so we can set them as easy-to-read column names later
+  #1.1 Read in the feature names so that observation data columns can be renamed to these easy-to-read names later
   featureNames <- read.table("features.txt") 
   fnames <- featureNames$V2
   
@@ -29,7 +29,7 @@
   yActivData = rbind(testActivityData,trainActivityData)
   subjectData = rbind(testSubjectData,trainSubjectData)
   
-  #Bind the activity and subject values as one data set so that we can column bind them to the observation data next
+  #Bind the activity and subject values as one data set so that they can be bound to the observation data later
   ASData <- cbind(yActivData,subjectData)
   
 
